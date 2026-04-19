@@ -1,0 +1,31 @@
+# BTS ARIRANG Tour — Robots.txt
+# Allow all search engines to crawl and index
+
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Crawl-delay for polite crawling (optional)
+Crawl-delay: 5
+
+# Sitemap location
+Sitemap: https://tourtickets.github.io/bts-tour/sitemap.xml
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /private/
+
+# Block AI scrapers (optional protection)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
