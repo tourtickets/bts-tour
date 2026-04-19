@@ -551,39 +551,416 @@
 </footer>
 
 <!-- JSON-LD rich schema (EventSeries + MusicGroup) for LLM & SEO -->
+<!-- FLAWLESS MUSICAL EVENT SCHEMA — BTS ARIRANG WORLD TOUR -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "EventSeries",
-  "@id": "https://bts-arirang-tour.github.io/#event",
+  "@id": "https://tourtickets.github.io/bts-tour/#event-series",
   "name": "BTS ARIRANG World Tour",
-  "alternateName": "BTS 2026-2027 World Tour",
+  "alternateName": "BTS World Tour 2026-2027 ARIRANG",
+  "description": "BTS returns with their massive 'ARIRANG' World Tour — the first full-group tour after completing mandatory military service. Spanning 85+ stadium shows across 34 cities worldwide, featuring a revolutionary 360-degree rotating stage and songs from their fifth full-length album 'ARIRANG'. All seven members — RM, Jin, SUGA, j-hope, Jimin, V, and Jung Kook — reunite for this historic global trek.",
   "startDate": "2026-04-09",
   "endDate": "2027-03-14",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "description": "BTS returns with 'ARIRANG' world tour — 85+ stadium shows, 360° stage, OT7 reunion after military service. Fifth album support.",
-  "image": "https://picsum.photos/1200/630?grayscale&seed=bts2026arirang",
-  "url": "https://bts-arirang-tour.github.io/",
-  "sameAs": ["https://en.wikipedia.org/wiki/Arirang_World_Tour", "https://sites.google.com/view/btstour/bts-tickets"],
+  "image": [
+    "https://picsum.photos/1200/630?grayscale&seed=bts2026arirang",
+    "https://picsum.photos/1920/1080?grayscale&seed=bts-arirang-stage"
+  ],
+  "url": "https://tourtickets.github.io/bts-tour/",
+  "sameAs": [
+    "https://en.wikipedia.org/wiki/Arirang_World_Tour",
+    "https://sites.google.com/view/btstour/bts-tickets",
+    "https://ibighit.com/bts/eng/tour/"
+  ],
   "organizer": {
-    "@type": "Organization", "name": "BigHit Music", "url": "https://ibighit.com/"
+    "@type": "Organization",
+    "name": "BigHit Music",
+    "alternateName": "HYBE Labels",
+    "url": "https://ibighit.com/",
+    "sameAs": [
+      "https://www.instagram.com/bighit_ent",
+      "https://x.com/BigHitEnt"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Seoul",
+      "addressCountry": "KR"
+    }
   },
-  "performer": {
-    "@type": "MusicGroup", "name": "BTS",
-    "member": [
-      {"@type": "Person", "name": "RM"}, {"@type": "Person", "name": "Jin"},
-      {"@type": "Person", "name": "SUGA"}, {"@type": "Person", "name": "j-hope"},
-      {"@type": "Person", "name": "Jimin"}, {"@type": "Person", "name": "V"},
-      {"@type": "Person", "name": "Jung Kook"}
-    ]
-  },
+  "performer": [
+    {
+      "@type": "MusicGroup",
+      "name": "BTS",
+      "alternateName": "Bangtan Sonyeondan",
+      "description": "Seven-member South Korean boy band formed in 2013. Global icons with multiple Billboard Hot 100 #1 hits.",
+      "image": "https://picsum.photos/800/800?grayscale&seed=bts-ot7",
+      "url": "https://ibighit.com/bts/eng/",
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/BTS",
+        "https://www.instagram.com/bts.bighitofficial",
+        "https://x.com/BTS_twt",
+        "https://www.youtube.com/@BTS"
+      ],
+      "member": [
+        {
+          "@type": "Person",
+          "name": "RM",
+          "alternateName": "Kim Namjoon",
+          "jobTitle": "Leader, Main Rapper",
+          "sameAs": "https://en.wikipedia.org/wiki/RM_(musician)"
+        },
+        {
+          "@type": "Person",
+          "name": "Jin",
+          "alternateName": "Kim Seokjin",
+          "jobTitle": "Sub-Vocalist",
+          "sameAs": "https://en.wikipedia.org/wiki/Jin_(singer)"
+        },
+        {
+          "@type": "Person",
+          "name": "SUGA",
+          "alternateName": "Min Yoongi",
+          "jobTitle": "Lead Rapper, Producer",
+          "sameAs": "https://en.wikipedia.org/wiki/Suga"
+        },
+        {
+          "@type": "Person",
+          "name": "j-hope",
+          "alternateName": "Jung Hoseok",
+          "jobTitle": "Main Dancer, Rapper",
+          "sameAs": "https://en.wikipedia.org/wiki/J-Hope"
+        },
+        {
+          "@type": "Person",
+          "name": "Jimin",
+          "alternateName": "Park Jimin",
+          "jobTitle": "Main Dancer, Lead Vocalist",
+          "sameAs": "https://en.wikipedia.org/wiki/Jimin"
+        },
+        {
+          "@type": "Person",
+          "name": "V",
+          "alternateName": "Kim Taehyung",
+          "jobTitle": "Lead Dancer, Vocalist",
+          "sameAs": "https://en.wikipedia.org/wiki/V_(singer)"
+        },
+        {
+          "@type": "Person",
+          "name": "Jung Kook",
+          "alternateName": "Jeon Jungkook",
+          "jobTitle": "Main Vocalist, Lead Dancer",
+          "sameAs": "https://en.wikipedia.org/wiki/Jungkook"
+        }
+      ]
+    }
+  ],
   "offers": {
     "@type": "AggregateOffer",
     "url": "https://www.ticketmaster.com/bts-tickets/artist/1305336",
     "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
-  }
+    "lowPrice": "59.00",
+    "highPrice": "595.00",
+    "offerCount": "85",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-01-15T10:00:00+09:00",
+    "seller": {
+      "@type": "Organization",
+      "name": "Ticketmaster",
+      "url": "https://www.ticketmaster.com"
+    }
+  },
+  "subEvent": [
+    {
+      "@type": "MusicEvent",
+      "@id": "https://tourtickets.github.io/bts-tour/#event-goyang-1",
+      "name": "BTS ARIRANG World Tour — Goyang",
+      "description": "Opening night of the ARIRANG World Tour at Goyang Stadium. First OT7 performance since military service completion.",
+      "startDate": "2026-04-09T19:00:00+09:00",
+      "endDate": "2026-04-09T22:30:00+09:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Goyang Stadium",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Goyang",
+          "addressRegion": "Gyeonggi-do",
+          "addressCountry": "KR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.6764,
+          "longitude": 126.7430
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.ticketmaster.com/bts-tickets/artist/1305336",
+        "priceCurrency": "KRW",
+        "availability": "https://schema.org/SoldOut"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Tokyo Dome",
+      "startDate": "2026-04-17T18:00:00+09:00",
+      "location": {
+        "@type": "Place",
+        "name": "Tokyo Dome",
+        "address": { "addressLocality": "Tokyo", "addressCountry": "JP" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Tampa (Raymond James Stadium)",
+      "startDate": "2026-04-25T19:30:00-04:00",
+      "location": {
+        "@type": "Place",
+        "name": "Raymond James Stadium",
+        "address": { "addressLocality": "Tampa", "addressRegion": "FL", "addressCountry": "US" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — El Paso (Sun Bowl Stadium)",
+      "startDate": "2026-05-02T19:00:00-06:00",
+      "location": {
+        "@type": "Place",
+        "name": "Sun Bowl Stadium",
+        "address": { "addressLocality": "El Paso", "addressRegion": "TX", "addressCountry": "US" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Mexico City (Estadio GNP Seguros)",
+      "startDate": "2026-05-07T20:00:00-06:00",
+      "location": {
+        "@type": "Place",
+        "name": "Estadio GNP Seguros",
+        "address": { "addressLocality": "Mexico City", "addressCountry": "MX" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Stanford (Stanford Stadium)",
+      "startDate": "2026-05-16T19:00:00-07:00",
+      "location": {
+        "@type": "Place",
+        "name": "Stanford Stadium",
+        "address": { "addressLocality": "Stanford", "addressRegion": "CA", "addressCountry": "US" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Las Vegas (Allegiant Stadium)",
+      "startDate": "2026-05-23T19:30:00-07:00",
+      "location": {
+        "@type": "Place",
+        "name": "Allegiant Stadium",
+        "address": { "addressLocality": "Las Vegas", "addressRegion": "NV", "addressCountry": "US" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Madrid (Riyadh Air Metropolitano)",
+      "startDate": "2026-06-26T21:00:00+02:00",
+      "location": {
+        "@type": "Place",
+        "name": "Riyadh Air Metropolitano",
+        "address": { "addressLocality": "Madrid", "addressCountry": "ES" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — London (Tottenham Hotspur Stadium)",
+      "startDate": "2026-07-06T19:00:00+01:00",
+      "location": {
+        "@type": "Place",
+        "name": "Tottenham Hotspur Stadium",
+        "address": { "addressLocality": "London", "addressCountry": "UK" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Paris (Stade de France)",
+      "startDate": "2026-07-17T20:00:00+02:00",
+      "location": {
+        "@type": "Place",
+        "name": "Stade de France",
+        "address": { "addressLocality": "Paris", "addressCountry": "FR" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — East Rutherford (MetLife Stadium)",
+      "startDate": "2026-08-01T19:00:00-04:00",
+      "location": {
+        "@type": "Place",
+        "name": "MetLife Stadium",
+        "address": { "addressLocality": "East Rutherford", "addressRegion": "NJ", "addressCountry": "US" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Foxborough (Gillette Stadium)",
+      "startDate": "2026-08-05T19:00:00-04:00",
+      "location": {
+        "@type": "Place",
+        "name": "Gillette Stadium",
+        "address": { "addressLocality": "Foxborough", "addressRegion": "MA", "addressCountry": "US" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Chicago (Soldier Field)",
+      "startDate": "2026-08-27T19:00:00-05:00",
+      "location": {
+        "@type": "Place",
+        "name": "Soldier Field",
+        "address": { "addressLocality": "Chicago", "addressRegion": "IL", "addressCountry": "US" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Los Angeles (SoFi Stadium) Night 1",
+      "startDate": "2026-09-01T19:00:00-07:00",
+      "location": {
+        "@type": "Place",
+        "name": "SoFi Stadium",
+        "address": { "addressLocality": "Inglewood", "addressRegion": "CA", "addressCountry": "US" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Bogotá (Estadio El Campín)",
+      "startDate": "2026-10-02T20:00:00-05:00",
+      "location": {
+        "@type": "Place",
+        "name": "Estadio El Campín",
+        "address": { "addressLocality": "Bogotá", "addressCountry": "CO" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Lima (Estadio San Marcos)",
+      "startDate": "2026-10-07T20:00:00-05:00",
+      "location": {
+        "@type": "Place",
+        "name": "Estadio San Marcos",
+        "address": { "addressLocality": "Lima", "addressCountry": "PE" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Santiago (Estadio Nacional)",
+      "startDate": "2026-10-14T21:00:00-03:00",
+      "location": {
+        "@type": "Place",
+        "name": "Estadio Nacional",
+        "address": { "addressLocality": "Santiago", "addressCountry": "CL" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Buenos Aires (Estadio Único)",
+      "startDate": "2026-10-21T21:00:00-03:00",
+      "location": {
+        "@type": "Place",
+        "name": "Estadio Único de La Plata",
+        "address": { "addressLocality": "Buenos Aires", "addressCountry": "AR" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — São Paulo (Estádio do MorumBIS)",
+      "startDate": "2026-10-28T20:00:00-03:00",
+      "location": {
+        "@type": "Place",
+        "name": "Estádio do MorumBIS",
+        "address": { "addressLocality": "São Paulo", "addressCountry": "BR" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Bangkok (Rajamangala Stadium)",
+      "startDate": "2026-12-03T19:00:00+07:00",
+      "location": {
+        "@type": "Place",
+        "name": "Rajamangala Stadium",
+        "address": { "addressLocality": "Bangkok", "addressCountry": "TH" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Singapore (National Stadium)",
+      "startDate": "2026-12-17T19:00:00+08:00",
+      "location": {
+        "@type": "Place",
+        "name": "National Stadium",
+        "address": { "addressLocality": "Singapore", "addressCountry": "SG" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Jakarta (GBK Stadium)",
+      "startDate": "2026-12-26T19:00:00+07:00",
+      "location": {
+        "@type": "Place",
+        "name": "Gelora Bung Karno Stadium",
+        "address": { "addressLocality": "Jakarta", "addressCountry": "ID" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Melbourne (Marvel Stadium)",
+      "startDate": "2027-02-12T19:00:00+11:00",
+      "location": {
+        "@type": "Place",
+        "name": "Marvel Stadium",
+        "address": { "addressLocality": "Melbourne", "addressRegion": "VIC", "addressCountry": "AU" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Sydney (Accor Stadium)",
+      "startDate": "2027-02-20T19:00:00+11:00",
+      "location": {
+        "@type": "Place",
+        "name": "Accor Stadium",
+        "address": { "addressLocality": "Sydney", "addressRegion": "NSW", "addressCountry": "AU" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Hong Kong (Kai Tak Sports Park)",
+      "startDate": "2027-03-04T20:00:00+08:00",
+      "location": {
+        "@type": "Place",
+        "name": "Kai Tak Sports Park",
+        "address": { "addressLocality": "Hong Kong", "addressCountry": "HK" }
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "BTS ARIRANG — Manila (Philippine Arena)",
+      "startDate": "2027-03-13T19:00:00+08:00",
+      "location": {
+        "@type": "Place",
+        "name": "Philippine Arena",
+        "address": { "addressLocality": "Bocaue", "addressRegion": "Bulacan", "addressCountry": "PH" }
+      }
+    }
+  ],
+  "subjectOf": {
+    "@type": "CreativeWork",
+    "name": "ARIRANG (Album)",
+    "description": "BTS fifth full-length studio album, supporting the ARIRANG World Tour.",
+    "url": "https://ibighit.com/bts/eng/discography/"
+  },
+  "keywords": "BTS, ARIRANG, World Tour, K-pop, Bangtan, RM, Jin, SUGA, j-hope, Jimin, V, Jungkook, concert, stadium tour, 2026, 2027, Ticketmaster, BigHit, HYBE, OT7, military service return"
 }
 </script>
 </body>
